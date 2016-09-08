@@ -1,6 +1,7 @@
 package comparecollections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -24,9 +25,9 @@ public class ComparableMain {
 		list.add(e2);
 		list.add(e3);
 		
-		Collections.sort(list);//used to sort collection 
+		Collections.sort(list);//used to sort collection objects
 		System.out.println(list);
-		
+		//Arrays.sort(); is used to sort Array objects
 	}
 
 }
