@@ -24,7 +24,7 @@ public class ComparableMain {
 		list.add(e2);
 		list.add(e3);
 		
-		Collections.sort(list);
+		Collections.sort(list);//used to sort collection 
 		System.out.println(list);
 		
 	}
