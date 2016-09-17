@@ -1,0 +1,35 @@
+package com.Practice.Examples;
+
+import java.util.ArrayList;
+
+public class RemoveDuplicates {
+	
+	/**
+	 * remove duplicate without using collections
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ArrayList<Object> al = new ArrayList<Object>();
+	    
+	    al.add("java");
+	    al.add('a');
+	    al.add('b');
+	    al.add('a');
+	    al.add("java");
+	    al.add(10.3);
+	    al.add('c');
+	    al.add(14);
+	    al.add("java");
+	    al.add(12);
+	    
+	    for(int i =0;i < al.size();i++){
+	    	for(int j=0;j<al.size();j++){
+	    		if(i!=j && al.get(i).equals(al.get(j))){
+	    			al.remove(j);
+	    		}
+	    	}
+	    }
+	    System.out.println(al);
+	}
+
+}
